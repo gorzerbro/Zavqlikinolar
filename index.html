@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Sayti</title>
+    <link rel="stylesheet" href="./stayle.css">
+</head>
+<body>
+    <header>
+        <h1>Kino Sayti</h1>
+        <input type="text" id="search" placeholder="Kinoni qidiring...">
+        <button onclick="searchMovie()">Qidirish</button>
+    </header>
+    
+    <main>
+        <div id="movies">
+            <!-- Kinolar shu yerda chiqadi -->
+        </div>
+    </main>
+    
+    <script>
+        function searchMovie() {
+            let query = document.getElementById('search').value;
+            alert('Siz qidirayotgan kino: ' + query);
+            // Bu yerga API orqali qidirish kodini qo‘shamiz
+        }
+    </script>
+</body>
+</html>
